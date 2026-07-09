@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geschenkmeister – LEGO Geschenkideen & Technik-Geschenke</title>
+  <meta name="description" content="Geschenkmeister sammelt Geschenkideen, LEGO Sets, Technik-Geschenke und Sammlerstücke für Familien, Erwachsene und Sammler. Affiliate-Links werden transparent gekennzeichnet.">
+  <style>
+    :root{
+      --bg:#fff8ed; --card:#ffffff; --ink:#1f2937; --muted:#64748b; --accent:#f59e0b; --accent2:#2563eb; --soft:#fef3c7; --line:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#fff8ed 0%,#eff6ff 100%);color:var(--ink);line-height:1.55}
+    .wrap{max-width:1080px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:44px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:24px;letter-spacing:-.02em}
+    .logo{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#ef4444);display:grid;place-items:center;color:white;font-weight:900;box-shadow:0 12px 30px rgba(245,158,11,.28)}
+    nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+    nav a{color:#334155;text-decoration:none;font-weight:700}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;margin-bottom:30px}
+    .hero-card{background:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.9);border-radius:30px;padding:42px;box-shadow:0 24px 70px rgba(15,23,42,.10);backdrop-filter: blur(8px)}
+    .kicker{display:inline-flex;align-items:center;gap:8px;background:var(--soft);border:1px solid #fde68a;color:#92400e;border-radius:999px;padding:8px 12px;font-weight:800;font-size:13px;margin-bottom:18px}
+    h1{font-size:52px;line-height:1.02;margin:0 0 18px;letter-spacing:-.055em}
+    .lead{font-size:19px;color:#475569;margin:0 0 22px;max-width:720px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:900;border:1px solid transparent}
+    .btn.primary{background:#111827;color:white;box-shadow:0 14px 28px rgba(17,24,39,.18)}
+    .btn.secondary{background:white;color:#111827;border-color:var(--line)}
+    .visual{min-height:340px;border-radius:30px;padding:28px;background:radial-gradient(circle at 20% 10%,#fde68a 0 18%,transparent 19%),radial-gradient(circle at 90% 20%,#bfdbfe 0 18%,transparent 19%),radial-gradient(circle at 45% 80%,#fecaca 0 22%,transparent 23%),#fff;box-shadow:0 24px 70px rgba(15,23,42,.10);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .block{position:absolute;border-radius:16px;font-weight:900;color:white;display:grid;place-items:center;box-shadow:0 16px 32px rgba(15,23,42,.14)}
+    .b1{width:150px;height:86px;background:#ef4444;left:70px;top:58px;transform:rotate(-9deg)}
+    .b2{width:180px;height:90px;background:#2563eb;right:70px;top:100px;transform:rotate(8deg)}
+    .b3{width:230px;height:105px;background:#f59e0b;left:165px;bottom:62px;transform:rotate(-2deg)}
+    .dots{display:grid;grid-template-columns:repeat(4,18px);gap:10px}
+    .dots span{width:18px;height:18px;border-radius:999px;background:rgba(255,255,255,.55)}
+    .notice{background:#111827;color:white;border-radius:22px;padding:18px 20px;margin:0 0 34px;box-shadow:0 14px 34px rgba(17,24,39,.16)}
+    .notice strong{color:#fde68a}
+    section{margin:44px 0}
+    h2{font-size:34px;line-height:1.12;margin:0 0 14px;letter-spacing:-.035em}
+    .sub{color:var(--muted);margin:0 0 22px;font-size:17px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:rgba(255,255,255,.84);border:1px solid rgba(255,255,255,.9);border-radius:24px;padding:22px;box-shadow:0 14px 40px rgba(15,23,42,.08)}
+    .card h3{margin:0 0 8px;font-size:20px}
+    .card p{margin:0;color:#475569}
+    .pill{display:inline-block;background:#eff6ff;color:#1d4ed8;border-radius:999px;font-size:12px;font-weight:900;padding:6px 10px;margin-bottom:12px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .legal{background:white;border:1px solid var(--line);border-radius:24px;padding:24px}
+    .legal h3{margin-top:0}
+    .legal p,.legal li{color:#475569;font-size:14px}
+    .footer{border-top:1px solid var(--line);padding:28px 0 10px;color:#64748b;font-size:14px}
+    .small{font-size:13px;color:#64748b}
+
+    .guide-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .guide{background:linear-gradient(180deg,#ffffff,#fffbeb);border:1px solid #fde68a;border-radius:22px;padding:18px;box-shadow:0 12px 28px rgba(15,23,42,.07)}
+    .guide .emoji{font-size:28px;margin-bottom:8px}
+    .guide h3{font-size:18px;margin:0 0 8px}
+    .guide p{font-size:14px;color:#475569;margin:0 0 14px}
+    .tagline{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .tag{background:#f8fafc;border:1px solid var(--line);color:#334155;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800}
+    .coming{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:10px 13px;background:#f1f5f9;color:#64748b;font-size:13px;font-weight:900;text-decoration:none}
+    .steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{background:white;border:1px solid var(--line);border-radius:24px;padding:22px;position:relative;overflow:hidden;box-shadow:0 14px 40px rgba(15,23,42,.07)}
+    .step:before{counter-increment:step;content:counter(step);position:absolute;right:18px;top:14px;width:34px;height:34px;border-radius:999px;background:#111827;color:white;display:grid;place-items:center;font-weight:900}
+    .step h3{margin:0 42px 8px 0;font-size:20px}
+    .step p{margin:0;color:#475569}
+    .mini-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+    .mini{background:#f8fafc;border:1px solid var(--line);border-radius:18px;padding:14px;font-size:14px;color:#475569}
+    @media(max-width:980px){.guide-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.mini-list{grid-template-columns:1fr}}
+    @media(max-width:820px){.hero,.split,.grid{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr}h1{font-size:40px}header{align-items:flex-start;flex-direction:column}.wrap{padding:20px}.hero-card{padding:28px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><div class="logo">GM</div><span>Geschenkmeister</span></div>
+      <nav>
+        <a href="#ideen">Ideen</a>
+        <a href="#guides">Guides</a>
+        <a href="#checkliste">Checkliste</a>
+        <a href="#grundsaetze">Grundsätze</a>
+        <a href="#impressum">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="hero-card">
+          <div class="kicker">🎁 Geschenkideen · Technik · LEGO® Sets</div>
+          <h1>Gute Geschenkideen, ohne ewig suchen zu müssen.</h1>
+          <p class="lead">Geschenkmeister sammelt hochwertige Geschenkideen, LEGO® Sets, Technik-Geschenke, Spielwaren und Sammlerstücke für Familien, Erwachsene und Sammler.</p>
+          <p class="lead">Der Fokus liegt auf verständlichen Empfehlungen, Produktvergleichen und saisonalen Geschenk-Guides.</p>
+          <div class="cta">
+            <a class="btn primary" href="#ideen">Geschenkideen ansehen</a>
+            <a class="btn secondary" href="#grundsaetze">Wie wir empfehlen</a>
+          </div>
+        </div>
+        <div class="visual" aria-label="Abstrakte Baustein-Grafik">
+          <div class="block b1"><div class="dots"><span></span><span></span><span></span><span></span></div></div>
+          <div class="block b2"><div class="dots"><span></span><span></span><span></span><span></span></div></div>
+          <div class="block b3"><div class="dots"><span></span><span></span><span></span><span></span></div></div>
+        </div>
+      </div>
+
+      <div class="notice">
+        <strong>Transparenz-Hinweis:</strong> Diese Website kann Affiliate-Links enthalten. Wenn du über einen solchen Link kaufst, kann Geschenkmeister eine Provision erhalten. Für dich bleibt der Preis gleich. Empfehlungen erfolgen redaktionell und werden als Werbung/Affiliate-Link gekennzeichnet.
+      </div>
+
+      <section id="ideen">
+        <h2>Wofür Geschenkmeister gedacht ist</h2>
+        <p class="sub">Eine einfache, ehrliche Orientierung für Menschen, die passende Geschenke suchen — besonders bei hochwertigen Sets, Technikthemen und Sammlerstücken.</p>
+        <div class="grid">
+          <div class="card"><span class="pill">LEGO® & Bausets</span><h3>Sets für Erwachsene</h3><p>Ideen für Sammler, Technikfans, Architekturinteressierte und Menschen, die gern etwas Besonderes bauen.</p></div>
+          <div class="card"><span class="pill">Familie</span><h3>Geschenke nach Alter</h3><p>Übersichtliche Empfehlungen für Kinder, Jugendliche, Eltern und Großeltern — je nach Anlass und Budget.</p></div>
+          <div class="card"><span class="pill">Technik</span><h3>Autos, F1 & Modelle</h3><p>Fokus auf Fahrzeugmodelle, Technik-Sets, kreative Geschenkideen und hochwertige Sammlerstücke.</p></div>
+          <div class="card"><span class="pill">Saison</span><h3>Weihnachten & Geburtstag</h3><p>Geschenk-Guides für die wichtigsten Anlässe, damit man nicht in letzter Minute irgendetwas kauft.</p></div>
+          <div class="card"><span class="pill">Vergleich</span><h3>Produktvergleiche</h3><p>Kurze, verständliche Gegenüberstellungen: Für wen passt welches Set, welche Preisklasse ist sinnvoll?</p></div>
+          <div class="card"><span class="pill">Büro & Zuhause</span><h3>Deko & Architecture</h3><p>Ideen für schöne Sets als Deko im Büro, Homeoffice oder Wohnzimmer.</p></div>
+        </div>
+      </section>
+
+
+      <section id="guides">
+        <h2>Aktuelle Geschenk-Guides in Vorbereitung</h2>
+        <p class="sub">Diese Bereiche werden nach der Freigabe des Partnerprogramms mit passenden Produktlinks ergänzt. Bis dahin dienen sie als Orientierung, welche Themen Geschenkmeister zuerst aufbaut.</p>
+        <div class="guide-grid">
+          <div class="guide">
+            <div class="emoji">🧑‍🎨</div>
+            <h3>LEGO® Geschenke für Erwachsene</h3>
+            <p>Für Sammler, Architektur-Fans, Technikfreunde und alle, die gern in Ruhe etwas Besonderes bauen.</p>
+            <span class="coming">Links folgen</span>
+          </div>
+          <div class="guide">
+            <div class="emoji">🏎️</div>
+            <h3>Technik, Autos & Fahrzeuge</h3>
+            <p>Modelle rund um Autos, Motorsport, Motorräder, Bau- und Technikthemen.</p>
+            <span class="coming">Links folgen</span>
+          </div>
+          <div class="guide">
+            <div class="emoji">👨‍👩‍👧</div>
+            <h3>Geschenke für Kinder</h3>
+            <p>Später sortiert nach Alter, Schwierigkeit, Anlass und Budget.</p>
+            <span class="coming">Links folgen</span>
+          </div>
+          <div class="guide">
+            <div class="emoji">💶</div>
+            <h3>Sets nach Budget</h3>
+            <p>Ideen bis 50 €, bis 100 € und hochwertige Geschenke ab 100 €.</p>
+            <span class="coming">Links folgen</span>
+          </div>
+          <div class="guide">
+            <div class="emoji">🏠</div>
+            <h3>Deko, Büro & Architecture</h3>
+            <p>Schöne Sets für Schreibtisch, Regal, Homeoffice und Wohnzimmer.</p>
+            <span class="coming">Links folgen</span>
+          </div>
+        </div>
+        <div class="tagline" aria-label="Themen">
+          <span class="tag">Geburtstag</span>
+          <span class="tag">Weihnachten</span>
+          <span class="tag">Sammler</span>
+          <span class="tag">Familien</span>
+          <span class="tag">Technikfans</span>
+          <span class="tag">Büro-Deko</span>
+        </div>
+      </section>
+
+      <section id="checkliste">
+        <h2>So findest du schneller das passende Geschenk</h2>
+        <p class="sub">Geschenkmeister bewertet Geschenkideen nicht nur nach Preis, sondern danach, ob sie wirklich zur Person und zum Anlass passen.</p>
+        <div class="steps">
+          <div class="step">
+            <h3>Person verstehen</h3>
+            <p>Was mag die Person wirklich? Technik, Autos, Filme, Architektur, Deko, Fantasy, Pflanzen oder kreative Bauprojekte?</p>
+          </div>
+          <div class="step">
+            <h3>Budget festlegen</h3>
+            <p>Viele gute Geschenkideen entstehen nicht durch das teuerste Set, sondern durch die richtige Preisklasse und den passenden Anlass.</p>
+          </div>
+          <div class="step">
+            <h3>Schwierigkeit prüfen</h3>
+            <p>Ein gutes Geschenk soll Freude machen: nicht zu simpel, nicht zu überfordernd und passend zur verfügbaren Zeit.</p>
+          </div>
+        </div>
+        <div class="mini-list">
+          <div class="mini"><strong>Für Erwachsene:</strong> eher detailreiche Sets, Sammlerstücke, Deko oder Technikmodelle.</div>
+          <div class="mini"><strong>Für Kinder:</strong> Altersempfehlung, Stabilität, Spielwert und Interesse des Kindes beachten.</div>
+          <div class="mini"><strong>Für Sammler:</strong> Themenwelt, Display-Wirkung und Verfügbarkeit sind wichtiger als reine Teilezahl.</div>
+          <div class="mini"><strong>Für Last-Minute-Geschenke:</strong> Budgetgrenze und sofort verfügbare Bestseller zuerst prüfen.</div>
+        </div>
+      </section>
+
+      <section id="grundsaetze">
+        <h2>Redaktionelle Grundsätze</h2>
+        <p class="sub">Geschenkmeister soll nicht wie eine reine Rabattseite wirken, sondern wie ein kleines Content-Projekt mit klarer Auswahl.</p>
+        <div class="split">
+          <div class="card"><h3>Transparent</h3><p>Affiliate-Links werden erkennbar gekennzeichnet. Eine mögliche Provision beeinflusst nicht den Preis für Besucher.</p></div>
+          <div class="card"><h3>Nützlich</h3><p>Empfehlungen sollen erklären, für wen ein Produkt passt, welches Budget sinnvoll ist und welcher Anlass geeignet ist.</p></div>
+          <div class="card"><h3>Redaktionell</h3><p>Der Schwerpunkt liegt auf Geschenk-Guides, Produktideen, Vergleichen und thematischen Übersichten.</p></div>
+          <div class="card"><h3>Markenbewusst</h3><p>Markennamen werden nur zur Beschreibung verwendet. Geschenkmeister ist kein offizieller Shop der genannten Marken.</p></div>
+        </div>
+      </section>
+
+      <section class="split">
+        <div class="legal" id="impressum">
+          <h3>Impressum</h3>
+          <p><strong>Medieninhaber und Betreiber:</strong><br>
+          Marcel Schink<br>
+          Aigen 180<br>
+          8943 Aigen im Ennstal<br>
+          Österreich</p>
+          <p><strong>Kontakt:</strong><br>
+          E-Mail: office@geschenkmeister.at<br>
+          Website: https://www.geschenkmeister.at/</p>
+          <p><strong>Offenlegung:</strong><br>
+          Geschenkmeister ist ein deutschsprachiges Content-Projekt für Geschenkideen, LEGO® Sets, Technik-Geschenke, Spielwaren und Sammlerstücke. Die Website kann Affiliate-Links und kommerzielle Empfehlungen enthalten.</p>
+          <p class="small">Hinweis: Bitte vor finaler Veröffentlichung steuerliche/gewerbliche Angaben ergänzen, falls sie für deine konkrete Nutzung erforderlich sind.</p>
+        </div>
+        <div class="legal" id="datenschutz">
+          <h3>Datenschutz</h3>
+          <p>Diese Website dient der Information über Geschenkideen und Produktempfehlungen. Bei einer Kontaktaufnahme per E-Mail werden die übermittelten Daten zur Bearbeitung der Anfrage verwendet.</p>
+          <p>Beim Besuch der Website können technisch notwendige Daten durch den Hosting- bzw. Website-Anbieter verarbeitet werden, um die Website bereitzustellen und sicher auszuliefern.</p>
+          <p>Sofern Affiliate-Links eingebunden werden, können beim Anklicken externe Anbieter oder Affiliate-Netzwerke erkennen, dass ein Besucher von Geschenkmeister weitergeleitet wurde. Käufe und Provisionen können dem jeweiligen Partnerprogramm zugeordnet werden.</p>
+          <p>Besucher können sich bei Fragen zum Datenschutz unter office@geschenkmeister.at melden.</p>
+        </div>
+      </section>
+
+      <section class="legal">
+        <h3>Affiliate- und Markenhinweis</h3>
+        <p>Geschenkmeister kann an Affiliate-Programmen teilnehmen. Links zu Shops oder Produkten können sogenannte Affiliate-Links sein. Erfolgt darüber ein Kauf, kann eine Provision entstehen. Für Besucher entstehen dadurch keine zusätzlichen Kosten.</p>
+        <p>LEGO® ist eine Marke der LEGO Gruppe. Geschenkmeister ist keine offizielle Website der LEGO Gruppe und steht nicht in Verbindung mit der LEGO Gruppe, sofern nicht ausdrücklich anders angegeben.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © Geschenkmeister · Betrieben von Marcel Schink · Kontakt: office@geschenkmeister.at
+    </footer>
+  </div>
+</body>
+</html>
