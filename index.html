@@ -65,7 +65,15 @@
     .step p{margin:0;color:#475569}
     .mini-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
     .mini{background:#f8fafc;border:1px solid var(--line);border-radius:18px;padding:14px;font-size:14px;color:#475569}
-    @media(max-width:980px){.guide-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.mini-list{grid-template-columns:1fr}}
+
+    .article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .article{background:white;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 14px 40px rgba(15,23,42,.08)}
+    .article h3{margin:0 0 10px;font-size:22px;line-height:1.18}
+    .article p{margin:0 0 12px;color:#475569}
+    .article ul{margin:12px 0 0;padding-left:18px;color:#475569}
+    .article li{margin:6px 0}
+    .soft-note{background:#fffbeb;border:1px solid #fde68a;border-radius:20px;padding:16px 18px;color:#92400e;font-weight:700;margin-top:18px}
+    @media(max-width:980px){.guide-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.mini-list{grid-template-columns:1fr}.article-grid{grid-template-columns:1fr}}
     @media(max-width:820px){.hero,.split,.grid{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr}h1{font-size:40px}header{align-items:flex-start;flex-direction:column}.wrap{padding:20px}.hero-card{padding:28px}}
   </style>
 </head>
@@ -76,6 +84,7 @@
       <nav>
         <a href="#ideen">Ideen</a>
         <a href="#guides">Guides</a>
+        <a href="#guide-texte">Guide-Texte</a>
         <a href="#checkliste">Checkliste</a>
         <a href="#grundsaetze">Grundsätze</a>
         <a href="#impressum">Impressum</a>
@@ -163,6 +172,45 @@
           <span class="tag">Technikfans</span>
           <span class="tag">Büro-Deko</span>
         </div>
+      </section>
+
+
+      <section id="guide-texte">
+        <h2>Erste Geschenk-Guides</h2>
+        <p class="sub">Diese kurzen Guides sind bewusst noch ohne konkrete Produktlinks aufgebaut. Nach der Freigabe des Partnerprogramms werden hier passende LEGO® Produktlinks ergänzt.</p>
+        <div class="article-grid">
+          <article class="article">
+            <span class="pill">Erwachsene</span>
+            <h3>LEGO® Geschenke für Erwachsene</h3>
+            <p>Für Technikfans, Sammler und alle, die gerne etwas Hochwertiges bauen. Besonders passend sind detailreiche Fahrzeuge, Architektur-Modelle, Film-Sets und Deko-Sets fürs Büro oder Wohnzimmer.</p>
+            <ul>
+              <li>Ideal für ruhige Bauabende</li>
+              <li>Gut als hochwertiges Geburtstags- oder Weihnachtsgeschenk</li>
+              <li>Besonders spannend für Sammler und Display-Fans</li>
+            </ul>
+          </article>
+          <article class="article">
+            <span class="pill">Kinder</span>
+            <h3>LEGO® Geschenke für Kinder</h3>
+            <p>Hier geht es um altersgerechte Geschenkideen nach Schwierigkeit, Thema und Anlass. Wichtig sind Sets, die Spaß machen, nicht überfordern und zum Alter des Kindes passen.</p>
+            <ul>
+              <li>Nach Alter und Interesse auswählen</li>
+              <li>Spielwert und Stabilität beachten</li>
+              <li>Nicht nur Preis, sondern Bau- und Spielspaß vergleichen</li>
+            </ul>
+          </article>
+          <article class="article">
+            <span class="pill">Technik & Fahrzeuge</span>
+            <h3>LEGO® Technik & Fahrzeuge</h3>
+            <p>Für Autofans, Motorsport-Fans und Modellbau-Begeisterte. Besonders interessant sind Sets mit realistischen Funktionen, vielen Details und hohem Sammlerwert.</p>
+            <ul>
+              <li>Passend für Auto-, Motorrad- und Motorsportfans</li>
+              <li>Interessant als Deko oder Sammlermodell</li>
+              <li>Gute Kategorie für höherwertige Geschenke</li>
+            </ul>
+          </article>
+        </div>
+        <div class="soft-note">Hinweis: Konkrete Produktempfehlungen und Shop-Links werden erst ergänzt, sobald die Partnerfreigabe vorliegt und die offiziellen Affiliate-Links verfügbar sind.</div>
       </section>
 
       <section id="checkliste">
