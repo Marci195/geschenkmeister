@@ -20,24 +20,104 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Geschenkideen für Männer ohne Klischees",
-  "description": "Geschenkideen für Männer nach Interessen, Anlass und Budget – für Partner, Papa, Freunde, Kollegen und Männer, die schon alles haben.",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.geschenkmeister.at/geschenke-maenner.html"
-  },
-  "url": "https://www.geschenkmeister.at/geschenke-maenner.html",
-  "inLanguage": "de-AT",
-  "author": {
-    "@type": "Person",
-    "name": "Marcel Schink"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Geschenkmeister",
-    "url": "https://www.geschenkmeister.at/"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.geschenkmeister.at/#organization",
+      "name": "Geschenkmeister",
+      "url": "https://www.geschenkmeister.at/",
+      "email": "office@geschenkmeister.at",
+      "founder": {
+        "@type": "Person",
+        "name": "Marcel Schink"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Aigen 180",
+        "postalCode": "8943",
+        "addressLocality": "Aigen im Ennstal",
+        "addressCountry": "AT"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.geschenkmeister.at/#website",
+      "url": "https://www.geschenkmeister.at/",
+      "name": "Geschenkmeister",
+      "description": "Unabhängige Geschenkideen, Ratgeber und Vergleiche.",
+      "inLanguage": "de-AT",
+      "publisher": {
+        "@id": "https://www.geschenkmeister.at/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.geschenkmeister.at/geschenke-maenner.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://www.geschenkmeister.at/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Geschenke für Männer",
+          "item": "https://www.geschenkmeister.at/geschenke-maenner.html"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.geschenkmeister.at/geschenke-maenner.html#article",
+      "mainEntityOfPage": {
+        "@id": "https://www.geschenkmeister.at/geschenke-maenner.html#webpage"
+      },
+      "headline": "Geschenkideen für Männer ohne Standard-Klischees",
+      "description": "Geschenkideen für Männer nach Interessen, Anlass und Budget – ohne Standard-Klischees.",
+      "url": "https://www.geschenkmeister.at/geschenke-maenner.html",
+      "inLanguage": "de-AT",
+      "author": {
+        "@type": "Person",
+        "name": "Marcel Schink"
+      },
+      "publisher": {
+        "@id": "https://www.geschenkmeister.at/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://www.geschenkmeister.at/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.geschenkmeister.at/geschenke-maenner.html#webpage",
+      "url": "https://www.geschenkmeister.at/geschenke-maenner.html",
+      "name": "Geschenkideen für Männer ohne Standard-Klischees",
+      "description": "Geschenkideen für Männer nach Interessen, Anlass und Budget – ohne Standard-Klischees.",
+      "isPartOf": {
+        "@id": "https://www.geschenkmeister.at/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.geschenkmeister.at/geschenke-maenner.html#breadcrumb"
+      },
+      "inLanguage": "de-AT"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.geschenkmeister.at/geschenke-maenner.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist ein gutes Geschenk für einen Mann, der nichts braucht?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein Erlebnis, ein Upgrade für ein vorhandenes Hobby oder ein hochwertiges Verbrauchsprodukt ist oft sinnvoller als ein weiterer Gegenstand."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 </head>

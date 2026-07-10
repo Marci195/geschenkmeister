@@ -20,15 +20,66 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Geschenkmeister",
-  "url": "https://www.geschenkmeister.at/",
-  "description": "Unabhängige Geschenkideen, Ratgeber und Vergleiche für Erwachsene, Männer, Frauen, Technikfans und verschiedene Budgets.",
-  "inLanguage": "de-AT",
-  "publisher": {
-    "@type": "Person",
-    "name": "Marcel Schink"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.geschenkmeister.at/#organization",
+      "name": "Geschenkmeister",
+      "url": "https://www.geschenkmeister.at/",
+      "email": "office@geschenkmeister.at",
+      "founder": {
+        "@type": "Person",
+        "name": "Marcel Schink"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Aigen 180",
+        "postalCode": "8943",
+        "addressLocality": "Aigen im Ennstal",
+        "addressCountry": "AT"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.geschenkmeister.at/#website",
+      "url": "https://www.geschenkmeister.at/",
+      "name": "Geschenkmeister",
+      "description": "Unabhängige Geschenkideen, Ratgeber und Vergleiche.",
+      "inLanguage": "de-AT",
+      "publisher": {
+        "@id": "https://www.geschenkmeister.at/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.geschenkmeister.at/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://www.geschenkmeister.at/"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.geschenkmeister.at/#webpage",
+      "url": "https://www.geschenkmeister.at/",
+      "name": "Geschenkmeister – Geschenkideen, Vergleiche & Empfehlungen",
+      "description": "Unabhängige Geschenkideen, Ratgeber und Vergleiche für Erwachsene, Männer, Frauen, Technikfans und verschiedene Budgets.",
+      "isPartOf": {
+        "@id": "https://www.geschenkmeister.at/#website"
+      },
+      "about": {
+        "@id": "https://www.geschenkmeister.at/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://www.geschenkmeister.at/#breadcrumb"
+      },
+      "inLanguage": "de-AT"
+    }
+  ]
 }
 </script>
 </head>

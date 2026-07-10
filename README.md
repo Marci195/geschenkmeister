@@ -1,13 +1,14 @@
-# Geschenkmeister – OnPage-SEO Update
+# Geschenkmeister – Schema.org Update
 
-Enthalten:
-- individuelle Title-Tags für alle 6 Seiten
-- individuelle Meta-Descriptions
-- Canonical-Tags
-- Open-Graph-Tags
-- Twitter-Card-Metadaten
-- strukturierte Daten (WebSite / Article)
-- bestehendes Google Analytics Consent-System
-- aktualisierte sitemap.xml
+Eingebaut:
+- Organization
+- WebSite
+- CollectionPage auf der Startseite
+- Article + WebPage auf den fünf Ratgeberseiten
+- BreadcrumbList auf allen Seiten
+- FAQPage nur dort, wo bereits sichtbare FAQ-Fragen im Seiteninhalt vorhanden sind
 
-Alle Dateien ins Hauptverzeichnis des GitHub-Repositories hochladen und vorhandene Dateien ersetzen.
+Wichtig:
+- Strukturierte Daten helfen Suchmaschinen beim Verständnis der Seiten.
+- Sie garantieren keine Rich Results oder besseren Rankings.
+- Alle Dateien ins Hauptverzeichnis des GitHub-Repositories hochladen und bestehende Dateien ersetzen.
