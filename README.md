@@ -1,10 +1,13 @@
-# Geschenkmeister Version 2.0
+# Geschenkmeister – OnPage-SEO Update
 
 Enthalten:
-- index.html
-- 5 eigenständige Ratgeberseiten
-- style.css
-- robots.txt
-- sitemap.xml
+- individuelle Title-Tags für alle 6 Seiten
+- individuelle Meta-Descriptions
+- Canonical-Tags
+- Open-Graph-Tags
+- Twitter-Card-Metadaten
+- strukturierte Daten (WebSite / Article)
+- bestehendes Google Analytics Consent-System
+- aktualisierte sitemap.xml
 
-Für GitHub Pages alle Dateien in das Hauptverzeichnis des Repositories hochladen.
+Alle Dateien ins Hauptverzeichnis des GitHub-Repositories hochladen und vorhandene Dateien ersetzen.
