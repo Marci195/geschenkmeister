@@ -273,3 +273,41 @@ footer a{color:#3559a7;text-decoration:none}
     background:linear-gradient(180deg, rgba(10,16,30,.72) 0%, rgba(10,16,30,.48) 42%, rgba(10,16,30,.84) 100%);
   }
 }
+
+
+/* Samsung-Galaxy-S26-Hero */
+.hero-samsung-s26{
+  background-image:url("samsung-s26-hero.png");
+  min-height:560px;
+  background-position:center;
+}
+.hero-samsung-s26::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(10,16,30,.88) 0%,rgba(10,16,30,.67) 40%,rgba(10,16,30,.18) 72%,rgba(10,16,30,0) 100%);
+}
+.hero-samsung-s26 .hero-overlay{max-width:690px}
+.hero-samsung-s26 .btn.primary{
+  background:#ff7a1a;
+  color:#fff;
+  border-color:#ff7a1a;
+}
+@media(max-width:820px){
+  .hero-samsung-s26{
+    min-height:500px;
+    background-position:60% center;
+  }
+  .hero-samsung-s26::before{
+    background:linear-gradient(90deg,rgba(10,16,30,.92) 0%,rgba(10,16,30,.72) 58%,rgba(10,16,30,.28) 100%);
+  }
+}
+@media(max-width:560px){
+  .hero-samsung-s26{
+    min-height:570px;
+    background-position:63% center;
+  }
+  .hero-samsung-s26::before{
+    background:linear-gradient(180deg,rgba(10,16,30,.72) 0%,rgba(10,16,30,.48) 42%,rgba(10,16,30,.86) 100%);
+  }
+}

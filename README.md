@@ -36,3 +36,12 @@ Alle Dateien in das Hauptverzeichnis des GitHub-Repositories hochladen und beste
 - Text und Amazon-Button liegen als echtes HTML über dem Bild
 - Responsive Darstellung für Tablet und Smartphone ergänzt
 - Bestehende interne Verlinkungen und Sitemap bleiben erhalten
+
+
+## Samsung-Galaxy-S26-Premium-Update
+- Vollständige Ratgeberseite: samsung-galaxy-s26-geschenk.html
+- Hero-Bild: samsung-s26-hero.png
+- Affiliate-Link: https://amzn.to/3QQ87ms
+- Vorteile, Nachteile, Daten, FAQ und Vergleich zum iPhone 15
+- Gegenverlinkung iPhone 15 ↔ Galaxy S26
+- Startseite, Technik-Seite, CSS und Sitemap aktualisiert
