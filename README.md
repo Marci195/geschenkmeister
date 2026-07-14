@@ -14,3 +14,10 @@ Alle Dateien in das Hauptverzeichnis des GitHub-Repositories hochladen und beste
 - Heimwerker-Unterseite eingebunden
 - Querverlinkung von Männer- und Geburtstagsseite ergänzt
 - interne Struktur: Startseite → Technik → Heimwerker → Produkt
+
+
+## Heimwerker-Hero Update
+- Neues Hero-Bild eingebaut: heimwerker-hero.png
+- HTML-Hero mit dunklem Verlauf und Call-to-Action umgesetzt
+- Responsive Darstellung für Tablet und Smartphone ergänzt
+- Button springt direkt zur ersten Produktempfehlung

@@ -90,3 +90,83 @@ footer a{color:#3559a7;text-decoration:none}
   .cookie-consent__actions{margin-top:16px}
   .cookie-button{flex:1}
 }
+
+
+/* Heimwerker-Hero */
+.hero-image{
+  position:relative;
+  min-height:520px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background-size:cover;
+  background-position:center;
+  border-radius:28px;
+  padding:0;
+}
+.hero-heimwerker{
+  background-image:url("heimwerker-hero.png");
+}
+.hero-image::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(10,16,30,.86) 0%, rgba(10,16,30,.66) 38%, rgba(10,16,30,.18) 68%, rgba(10,16,30,0) 100%);
+}
+.hero-overlay{
+  position:relative;
+  z-index:1;
+  max-width:650px;
+  padding:64px 54px;
+  color:#fff;
+}
+.hero-overlay .kicker{
+  background:rgba(255,255,255,.15);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.18);
+}
+.hero-overlay h1{
+  color:#fff;
+  margin-top:18px;
+  text-shadow:0 2px 16px rgba(0,0,0,.28);
+}
+.hero-overlay .lead{
+  color:rgba(255,255,255,.92);
+  max-width:560px;
+}
+.hero-overlay .btn{
+  background:#ff7a1a;
+  color:#fff;
+  border-color:#ff7a1a;
+}
+.hero-overlay .btn:hover{
+  transform:translateY(-1px);
+  filter:brightness(.97);
+}
+@media (max-width: 820px){
+  .hero-image{
+    min-height:440px;
+    background-position:64% center;
+  }
+  .hero-image::before{
+    background:linear-gradient(90deg, rgba(10,16,30,.9) 0%, rgba(10,16,30,.74) 55%, rgba(10,16,30,.25) 100%);
+  }
+  .hero-overlay{
+    padding:44px 28px;
+    max-width:100%;
+  }
+}
+@media (max-width: 560px){
+  .hero-image{
+    min-height:500px;
+    background-position:68% center;
+    border-radius:20px;
+  }
+  .hero-image::before{
+    background:linear-gradient(180deg, rgba(10,16,30,.8) 0%, rgba(10,16,30,.58) 45%, rgba(10,16,30,.8) 100%);
+  }
+  .hero-overlay{
+    align-self:flex-end;
+    padding:30px 22px 34px;
+  }
+}
