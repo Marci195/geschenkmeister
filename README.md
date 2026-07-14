@@ -21,3 +21,11 @@ Alle Dateien in das Hauptverzeichnis des GitHub-Repositories hochladen und beste
 - HTML-Hero mit dunklem Verlauf und Call-to-Action umgesetzt
 - Responsive Darstellung für Tablet und Smartphone ergänzt
 - Button springt direkt zur ersten Produktempfehlung
+
+
+## iPhone-15-Update
+- Neue Seite: iphone-15-geschenk.html
+- Produkt: Apple iPhone 15, 256 GB, Schwarz
+- Affiliate-Link: https://amzn.to/4pmqRXh
+- Startseite, Technik-Seite, CSS und Sitemap ergänzt
+- Amazon-Pflichthinweis und sponsored/nofollow eingebaut
