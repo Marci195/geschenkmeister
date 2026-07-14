@@ -1,10 +1,9 @@
-# Geschenkmeister Version 2.0
+Geburtstagsgeschenke-Seite ergänzt. Alle Dateien ins GitHub-Hauptverzeichnis hochladen und bestehende Dateien ersetzen.
 
-Enthalten:
-- index.html
-- 5 eigenständige Ratgeberseiten
-- style.css
-- robots.txt
-- sitemap.xml
+## Amazon-Heimwerker-Update
+- Neue Seite: heimwerker-geschenke.html
+- Affiliate-Link: https://amzn.to/3Ti9AT7
+- Amazon-Pflichthinweis und Werbekennzeichnung eingebaut
+- Startseite, Technik-Ratgeber und Sitemap aktualisiert
 
-Für GitHub Pages alle Dateien in das Hauptverzeichnis des Repositories hochladen.
+Alle Dateien in das Hauptverzeichnis des GitHub-Repositories hochladen und bestehende Dateien ersetzen.
