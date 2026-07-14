@@ -233,3 +233,43 @@ footer a{color:#3559a7;text-decoration:none}
   .iphone-visual{min-height:260px}
   .iphone-device{width:150px;height:300px}
 }
+
+
+/* iPhone-15-Hero mit Bild */
+.hero-iphone15{
+  background-image:url("iphone15-hero.png");
+  min-height:560px;
+  background-position:center;
+}
+.hero-iphone15::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(10,16,30,.88) 0%, rgba(10,16,30,.65) 40%, rgba(10,16,30,.18) 72%, rgba(10,16,30,0) 100%);
+}
+.hero-iphone15 .hero-overlay{
+  max-width:680px;
+}
+.hero-iphone15 .btn.primary{
+  background:#ff7a1a;
+  color:#fff;
+  border-color:#ff7a1a;
+}
+@media (max-width: 820px){
+  .hero-iphone15{
+    min-height:480px;
+    background-position:58% center;
+  }
+  .hero-iphone15::before{
+    background:linear-gradient(90deg, rgba(10,16,30,.9) 0%, rgba(10,16,30,.72) 58%, rgba(10,16,30,.25) 100%);
+  }
+}
+@media (max-width: 560px){
+  .hero-iphone15{
+    min-height:560px;
+    background-position:62% center;
+  }
+  .hero-iphone15::before{
+    background:linear-gradient(180deg, rgba(10,16,30,.72) 0%, rgba(10,16,30,.48) 42%, rgba(10,16,30,.84) 100%);
+  }
+}

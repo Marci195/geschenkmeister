@@ -29,3 +29,10 @@ Alle Dateien in das Hauptverzeichnis des GitHub-Repositories hochladen und beste
 - Affiliate-Link: https://amzn.to/4pmqRXh
 - Startseite, Technik-Seite, CSS und Sitemap ergänzt
 - Amazon-Pflichthinweis und sponsored/nofollow eingebaut
+
+
+## iPhone-15-Hero-Update
+- Neues Hero-Bild eingebaut: iphone15-hero.png
+- Text und Amazon-Button liegen als echtes HTML über dem Bild
+- Responsive Darstellung für Tablet und Smartphone ergänzt
+- Bestehende interne Verlinkungen und Sitemap bleiben erhalten
