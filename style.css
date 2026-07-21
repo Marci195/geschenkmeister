@@ -311,3 +311,61 @@ footer a{color:#3559a7;text-decoration:none}
     background:linear-gradient(180deg,rgba(10,16,30,.72) 0%,rgba(10,16,30,.48) 42%,rgba(10,16,30,.86) 100%);
   }
 }
+
+
+/* Buch-Ratgeber und Bücher-Kategorie */
+.book-hero{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);
+  align-items:center;
+  gap:38px;
+  overflow:hidden;
+  background:linear-gradient(135deg,#fff8e8 0%,#f4ead1 58%,#dfcda6 100%);
+}
+.book-stage{
+  min-height:390px;
+  display:grid;
+  place-items:center;
+  position:relative;
+  perspective:900px;
+}
+.book-cover{
+  width:230px;
+  min-height:330px;
+  padding:28px 24px;
+  box-sizing:border-box;
+  border-radius:8px 16px 16px 8px;
+  color:#1d2939;
+  background:linear-gradient(135deg,#f7f7f3,#dedfd9);
+  border-left:12px solid #c8c9c2;
+  box-shadow:18px 24px 44px rgba(65,50,20,.25);
+  transform:rotateY(-10deg) rotateZ(3deg);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.book-cover strong{
+  display:block;
+  margin:22px 0;
+  font-size:3.3rem;
+  line-height:.88;
+  letter-spacing:-.06em;
+}
+.book-small{font-size:.78rem;letter-spacing:.16em;font-weight:800}
+.book-sub{font-size:.88rem;line-height:1.4}
+.gift-ribbon{
+  position:absolute;
+  width:330px;
+  height:52px;
+  border-radius:50%;
+  border:14px solid rgba(255,122,26,.72);
+  transform:rotate(-15deg);
+  z-index:-1;
+}
+.books-category-hero{
+  background:linear-gradient(135deg,#fffaf0,#f1e4c9);
+}
+@media(max-width:820px){
+  .book-hero{grid-template-columns:1fr}
+  .book-stage{min-height:330px}
+}

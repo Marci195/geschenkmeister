@@ -45,3 +45,12 @@ Alle Dateien in das Hauptverzeichnis des GitHub-Repositories hochladen und beste
 - Vorteile, Nachteile, Daten, FAQ und Vergleich zum iPhone 15
 - Gegenverlinkung iPhone 15 ↔ Galaxy S26
 - Startseite, Technik-Seite, CSS und Sitemap aktualisiert
+
+
+## Thalia-Buch-Update
+- Neue Kategorie: buecher-als-geschenk.html
+- Neuer Ratgeber: die-1-prozent-methode-geschenk.html
+- Thalia-Affiliate-Link: https://tidd.ly/4fwWJ7d
+- Interne Verlinkungen von Startseite, Geburtstag, Erwachsene, Männer und Frauen
+- Sitemap und CSS aktualisiert
+- Werbekennzeichnung und rel="sponsored nofollow noopener" eingebaut
