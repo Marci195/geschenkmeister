@@ -54,3 +54,13 @@ Alle Dateien in das Hauptverzeichnis des GitHub-Repositories hochladen und beste
 - Interne Verlinkungen von Startseite, Geburtstag, Erwachsene, Männer und Frauen
 - Sitemap und CSS aktualisiert
 - Werbekennzeichnung und rel="sponsored nofollow noopener" eingebaut
+
+## Premium-Homepage Update – 22.07.2026
+- Startseite vollständig als Geschenkportal neu aufgebaut
+- Interaktiver Geschenkmeister-Finder (ohne Datenbank)
+- Schnelleinstieg nach Person, Anlass und Budget
+- Redaktionelle Empfehlungskarten mit Geschenkmeister-Score
+- FAQ, Transparenzhinweise und interne Verlinkung verbessert
+- Neue Datei: finder.js
+
+Upload: Alle Dateien in das GitHub-Hauptverzeichnis hochladen und bestehende Dateien ersetzen.
