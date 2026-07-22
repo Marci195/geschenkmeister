@@ -1,71 +1,103 @@
 <!doctype html>
-<html lang="de-AT">
+<html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<title>Geschenkideen für jeden Anlass | Geschenkmeister</title>
-<meta name="description" content="Finde passende Geschenkideen nach Person, Anlass, Budget und Interesse – mit ehrlichen Ratgebern und dem Geschenkmeister-Finder.">
-<link rel="canonical" href="https://www.geschenkmeister.at/">
-<meta property="og:locale" content="de_AT"><meta property="og:type" content="website"><meta property="og:title" content="Geschenkmeister – Das passende Geschenk schneller finden"><meta property="og:description" content="Handverlesene Geschenkideen, ehrliche Kaufberatung und ein einfacher Geschenkfinder."><meta property="og:url" content="https://www.geschenkmeister.at/"><meta property="og:site_name" content="Geschenkmeister">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Geschenkmeister – Das passende Geschenk schneller finden"><meta name="twitter:description" content="Geschenkideen nach Person, Anlass, Budget und Interesse.">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.geschenkmeister.at/#organization","name":"Geschenkmeister","url":"https://www.geschenkmeister.at/","email":"office@geschenkmeister.at","founder":{"@type":"Person","name":"Marcel Schink"}},{"@type":"WebSite","@id":"https://www.geschenkmeister.at/#website","url":"https://www.geschenkmeister.at/","name":"Geschenkmeister","description":"Unabhängige Geschenkideen, Ratgeber und Vergleiche.","inLanguage":"de-AT","publisher":{"@id":"https://www.geschenkmeister.at/#organization"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kostet die Nutzung von Geschenkmeister etwas?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Ratgeber und der Geschenkfinder können kostenlos genutzt werden."}},{"@type":"Question","name":"Wie finanziert sich Geschenkmeister?","acceptedAnswer":{"@type":"Answer","text":"Einzelne Links sind Affiliate-Links. Bei einem qualifizierten Kauf kann Geschenkmeister eine Provision erhalten, ohne dass sich der Preis für Besucher erhöht."}}]}]}</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geschenkmeister Design System V1.0</title>
+<meta name="description" content="Komponentenübersicht für Geschenkmeister.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/geschenkmeister.css">
 </head>
 <body>
-<header><div class="wrap topbar"><a class="brand" href="index.html"><span class="logo">GM</span><span>Geschenkmeister</span></a><nav><a href="#finder">Geschenkfinder</a><a href="geburtstagsgeschenke.html">Anlässe</a><a href="geschenke-maenner.html">Männer</a><a href="geschenke-frauen.html">Frauen</a><a href="geschenkideen-budget.html">Budget</a><a href="technik-geschenke.html">Technik</a><a href="buecher-als-geschenk.html">Bücher</a></nav></div></header>
-<main><div class="wrap">
-<section class="home-hero">
-  <span class="kicker">Geschenkideen mit System</span>
-  <h1>Das passende Geschenk finden. Ohne stundenlang zu suchen.</h1>
-  <p class="lead">Entdecke handverlesene Ideen nach Person, Anlass, Budget und Interesse – ehrlich eingeordnet und verständlich erklärt.</p>
-  <div class="hero-actions"><a class="btn light" href="#finder">Geschenk finden</a><a class="btn ghost-light" href="#empfehlungen">Unsere Empfehlungen</a></div>
+<header class="gm-header">
+  <nav class="gm-nav gm-container" aria-label="Hauptnavigation">
+    <a class="gm-brand" href="https://www.geschenkmeister.at/">Geschenk<span>meister</span></a>
+    <button class="gm-nav-toggle" data-gm-nav-toggle aria-expanded="false" aria-label="Menü öffnen">☰</button>
+    <ul class="gm-menu" data-gm-menu>
+      <li><a href="https://www.geschenkmeister.at/">Startseite</a></li>
+      <li><a href="https://www.geschenkmeister.at/geschenke-maenner.html">Für Männer</a></li>
+      <li><a href="#">Für Frauen</a></li>
+      <li><a href="#">Anlässe</a></li>
+      <li><a href="#">Budget</a></li>
+      <li><a href="#">Ratgeber</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="gm-hero">
+  <div class="gm-container gm-hero__grid">
+    <div>
+      <span class="gm-badge">🏆 Geschenkmeister Design System 1.0</span>
+      <h1>Ein Look. Eine Sprache. Eine starke Marke.</h1>
+      <p class="gm-lead">Diese Bibliothek liefert die wiederverwendbaren Bausteine für alle Kategorien, Ratgeber und Produktseiten auf www.geschenkmeister.at.</p>
+      <div class="gm-actions">
+        <a class="gm-btn gm-btn--primary" href="#komponenten">Komponenten ansehen</a>
+        <a class="gm-btn gm-btn--ghost" href="templates/kategorie.html">Kategorie-Vorlage</a>
+      </div>
+    </div>
+    <aside class="gm-score">
+      <div class="gm-kicker" style="color:#dfe7ff">Geschenkmeister Score</div>
+      <div class="gm-score__value">9,6</div>
+      <div class="gm-score__row"><span>Geschenkidee</span><strong>10/10</strong></div>
+      <div class="gm-score__row"><span>Qualität</span><strong>9/10</strong></div>
+      <div class="gm-score__row"><span>Preis-Leistung</span><strong>9/10</strong></div>
+      <div class="gm-score__row"><span>Beliebtheit</span><strong>10/10</strong></div>
+    </aside>
+  </div>
 </section>
 
-<section class="finder-shell" id="finder" aria-labelledby="finder-title">
-  <div class="section-title-row"><div><span class="eyebrow">Geschenkmeister-Finder</span><h2 id="finder-title">Vier Fragen. Drei passende Ideen.</h2></div><p>Die erste Version funktioniert direkt im Browser – ohne Konto und ohne Dateneingabe.</p></div>
-  <form id="gift-finder" class="finder-grid">
-    <label>Für wen?<select name="person" required><option value="partner">Partnerin oder Partner</option><option value="mann">Mann</option><option value="frau">Frau</option><option value="eltern">Eltern oder Großeltern</option></select></label>
-    <label>Anlass<select name="occasion" required><option value="geburtstag">Geburtstag</option><option value="weihnachten">Weihnachten</option><option value="abschluss">Abschluss</option><option value="einzug">Einzug</option><option value="einfach">Einfach so</option></select></label>
-    <label>Budget<select name="budget" required><option value="unter25">Unter 25 €</option><option value="25-50">25–50 €</option><option value="50-100">50–100 €</option><option value="ueber100">Über 100 €</option></select></label>
-    <label>Interesse<select name="interest" required><option value="offen">Noch offen</option><option value="technik">Technik</option><option value="buecher">Bücher</option><option value="entwicklung">Persönliche Entwicklung</option><option value="heimwerken">Heimwerken</option></select></label>
-    <div class="finder-action"><button class="btn primary" type="submit">Ideen anzeigen</button></div>
-  </form>
-  <div class="finder-results" id="finder-results" aria-live="polite"><h3>Das passt besonders gut:</h3><div class="finder-result-list" id="finder-result-list"></div></div>
+<section class="gm-section gm-container" id="komponenten">
+  <span class="gm-kicker">Farben</span><h2>Markenpalette</h2>
+  <div class="gm-grid gm-grid--4">
+    <div class="gm-demo-swatch" style="background:#1e3a8a;color:white">Primärblau</div>
+    <div class="gm-demo-swatch" style="background:#f4b400">Gold</div>
+    <div class="gm-demo-swatch" style="background:#f7f9fc">Hintergrund</div>
+    <div class="gm-demo-swatch" style="background:#172033;color:white">Text</div>
+  </div>
 </section>
 
-<section class="section"><div class="section-title-row"><div><span class="eyebrow">Schnelleinstieg</span><h2>Für wen suchst du?</h2></div></div><div class="quick-grid">
-<a class="quick-card" href="geschenke-maenner.html"><span class="emoji">👨</span><strong>Für Männer</strong><small>Papa, Partner, Freunde</small></a>
-<a class="quick-card" href="geschenke-frauen.html"><span class="emoji">👩</span><strong>Für Frauen</strong><small>Persönlich und modern</small></a>
-<a class="quick-card" href="geschenke-erwachsene.html"><span class="emoji">✨</span><strong>Für Erwachsene</strong><small>Von praktisch bis besonders</small></a>
-<a class="quick-card" href="technik-geschenke.html"><span class="emoji">📱</span><strong>Für Technikfans</strong><small>Smartphones und Gadgets</small></a>
-<a class="quick-card" href="buecher-als-geschenk.html"><span class="emoji">📚</span><strong>Für Leseratten</strong><small>Bücher mit Geschenkfaktor</small></a>
-</div></section>
+<section class="gm-section gm-container">
+  <span class="gm-kicker">Karten</span><h2>Kategorien und Empfehlungen</h2>
+  <div class="gm-grid">
+    <article class="gm-card gm-card--lift"><div class="gm-card__icon">📱</div><h3>Technik</h3><p>Geschenke für Technikfans und digitale Alltagshelden.</p><a href="#" class="gm-btn gm-btn--ghost">Entdecken</a></article>
+    <article class="gm-card gm-card--lift"><div class="gm-card__icon">📚</div><h3>Bücher</h3><p>Inspirierende Titel, Bestseller und persönliche Empfehlungen.</p><a href="#" class="gm-btn gm-btn--ghost">Entdecken</a></article>
+    <article class="gm-card gm-card--lift"><div class="gm-card__icon">🏡</div><h3>Wohnen</h3><p>Schöne Ideen für Einzug, Zuhause und besondere Anlässe.</p><a href="#" class="gm-btn gm-btn--ghost">Entdecken</a></article>
+  </div>
+</section>
 
-<section class="section"><div class="section-title-row"><div><span class="eyebrow">Nach Anlass</span><h2>Geschenke für besondere Momente</h2></div></div><div class="quick-grid">
-<a class="quick-card" href="geburtstagsgeschenke.html"><span class="emoji">🎂</span><strong>Geburtstag</strong><small>Für jedes Alter</small></a>
-<a class="quick-card" href="geburtstagsgeschenke.html"><span class="emoji">🎄</span><strong>Weihnachten</strong><small>Frühzeitig Ideen sammeln</small></a>
-<a class="quick-card" href="geschenke-erwachsene.html"><span class="emoji">💍</span><strong>Hochzeit</strong><small>Bleibende Erinnerungen</small></a>
-<a class="quick-card" href="heimwerker-geschenke.html"><span class="emoji">🏡</span><strong>Einzug</strong><small>Praktisch fürs neue Zuhause</small></a>
-<a class="quick-card" href="buecher-als-geschenk.html"><span class="emoji">🎓</span><strong>Abschluss</strong><small>Motivation für Neues</small></a>
-</div></section>
+<section class="gm-section gm-container">
+  <span class="gm-kicker">Produktkarte</span><h2>Einheitliche Produktempfehlung</h2>
+  <article class="gm-card gm-product">
+    <div class="gm-product__media">Produktbild</div>
+    <div>
+      <span class="gm-badge gm-badge--green">💰 Preis-Leistungs-Tipp</span>
+      <h3>Produktname</h3>
+      <p>Kurze, ehrliche Begründung, weshalb dieses Produkt als Geschenk geeignet ist und für wen es besonders gut passt.</p>
+      <div class="gm-actions"><a href="#" class="gm-btn gm-btn--gold" rel="sponsored nofollow">Zum Angebot</a><a href="#" class="gm-btn gm-btn--ghost">Details ansehen</a></div>
+      <p class="gm-note">Affiliate-Link: Für dich entstehen keine Mehrkosten.</p>
+    </div>
+  </article>
+</section>
 
-<section class="section"><div class="section-title-row"><div><span class="eyebrow">Nach Budget</span><h2>Gute Ideen in jeder Preisklasse</h2></div><a href="geschenkideen-budget.html">Alle Budgetideen →</a></div><div class="budget-row">
-<a class="budget-pill" href="geschenkideen-budget.html"><strong>Unter 20 €</strong><span>Kleine Aufmerksamkeiten</span></a><a class="budget-pill" href="geschenkideen-budget.html"><strong>20–50 €</strong><span>Viel Auswahl, fairer Preis</span></a><a class="budget-pill" href="geschenkideen-budget.html"><strong>50–100 €</strong><span>Für besondere Anlässe</span></a><a class="budget-pill" href="geschenkideen-budget.html"><strong>Über 100 €</strong><span>Hochwertige Geschenke</span></a>
-</div></section>
+<section class="gm-section gm-container gm-faq">
+  <span class="gm-kicker">FAQ</span><h2>Fragen und Antworten</h2>
+  <details><summary>Wie wird der Geschenkmeister Score berechnet?</summary><p>Aus transparenten Einzelwerten wie Geschenkidee, Qualität, Preis-Leistung und Beliebtheit. Bewertungen müssen nachvollziehbar begründet werden.</p></details>
+  <details><summary>Welche Buttons werden verwendet?</summary><p>Für Affiliate-Ziele wird einheitlich „Zum Angebot“ genutzt. Interne Links verwenden „Details ansehen“ oder „Entdecken“.</p></details>
+</section>
+</main>
 
-<section class="section" id="empfehlungen"><div class="section-title-row"><div><span class="eyebrow">Handverlesen</span><h2>Unsere aktuellen Empfehlungen</h2></div><p>Eigene redaktionelle Einordnung – keine automatisch übernommenen Sterne.</p></div><div class="featured-grid">
-<article class="feature-card"><span class="score-badge">🏆 Geschenkmeister-Empfehlung</span><h3>Die 1%-Methode</h3><p class="reason">Ein sinnvolles Geschenk für Menschen, die neue Routinen aufbauen oder einen Neustart wagen.</p><div class="score-box"><span>Geschenkmeister-Score</span><strong>9,4/10</strong></div><a class="btn primary" href="die-1-prozent-methode-geschenk.html">Ratgeber öffnen</a><p class="affiliate-note">Enthält einen gekennzeichneten Thalia-Affiliate-Link.</p></article>
-<article class="feature-card"><span class="score-badge">⭐ Technik-Tipp</span><h3>iPhone 15 mit 256 GB</h3><p class="reason">Ein hochwertiges Geschenk für Apple-Nutzer, die ihr Smartphone mehrere Jahre verwenden möchten.</p><div class="score-box"><span>Geschenkmeister-Score</span><strong>9,1/10</strong></div><a class="btn primary" href="iphone-15-geschenk.html">Ratgeber öffnen</a><p class="affiliate-note">Enthält einen gekennzeichneten Amazon-Affiliate-Link.</p></article>
-<article class="feature-card"><span class="score-badge">🛠️ Preis-Leistungs-Tipp</span><h3>Laser-Maßband</h3><p class="reason">Praktisch, kompakt und deutlich origineller als das nächste Standard-Werkzeugset.</p><div class="score-box"><span>Geschenkmeister-Score</span><strong>8,8/10</strong></div><a class="btn primary" href="heimwerker-geschenke.html">Ratgeber öffnen</a><p class="affiliate-note">Enthält einen gekennzeichneten Amazon-Affiliate-Link.</p></article>
-</div></section>
-
-<section class="section"><div class="section-title-row"><div><span class="eyebrow">Unser Anspruch</span><h2>Warum Geschenkmeister?</h2></div></div><div class="value-grid"><article class="value-card"><span>🎁</span><h3>Handverlesen</h3><p>Keine endlosen Produktlisten, sondern eine nachvollziehbare Auswahl.</p></article><article class="value-card"><span>💬</span><h3>Ehrlich eingeordnet</h3><p>Stärken, Schwächen und passende Zielgruppen werden klar erklärt.</p></article><article class="value-card"><span>💶</span><h3>Nach Budget</h3><p>Gute Geschenke müssen nicht unnötig teuer sein.</p></article><article class="value-card"><span>🔎</span><h3>Schnell auffindbar</h3><p>Person, Anlass und Interesse führen direkt zu passenden Ideen.</p></article></div></section>
-
-<section class="section faq-list"><div class="section-title-row"><div><span class="eyebrow">Häufige Fragen</span><h2>Gut zu wissen</h2></div></div><details><summary>Wie wählt Geschenkmeister Empfehlungen aus?</summary><p>Wir berücksichtigen Nutzen, Geschenkfaktor, Zielgruppe, Preis-Leistung und mögliche Nachteile. Der Geschenkmeister-Score ist eine eigene redaktionelle Bewertung und keine Kundenbewertung.</p></details><details><summary>Kostet Geschenkmeister etwas?</summary><p>Nein. Alle Ratgeber und der Geschenkfinder sind kostenlos nutzbar.</p></details><details><summary>Wie finanziert sich die Website?</summary><p>Einzelne Links sind Affiliate-Links. Bei einem qualifizierten Kauf kann Geschenkmeister eine Provision erhalten. Für Besucher entstehen dadurch keine zusätzlichen Kosten.</p></details></section>
-
-<div class="notice"><strong>Transparenz:</strong> Affiliate-Links werden auf den jeweiligen Ratgeberseiten klar als Werbung gekennzeichnet. Empfehlungen entstehen redaktionell und nicht allein aufgrund einer möglichen Provision.</div>
-<section class="section"><div class="grid two"><article class="card" id="impressum"><h3>Impressum</h3><p><strong>Medieninhaber und Betreiber:</strong><br>Marcel Schink<br>Aigen 180<br>8943 Aigen im Ennstal<br>Österreich</p><p><strong>Kontakt:</strong><br><a href="mailto:office@geschenkmeister.at">office@geschenkmeister.at</a></p></article><article class="card" id="datenschutz"><h3>Datenschutz</h3><p>Google Analytics wird ausschließlich nach ausdrücklicher Zustimmung geladen. Du kannst die Entscheidung jederzeit über die Cookie-Einstellungen ändern.</p><p><a href="#" data-cookie-settings>Cookie-Einstellungen öffnen</a></p></article></div></section>
-</div></main>
-<footer><div class="wrap">© Geschenkmeister · Marcel Schink · <a href="mailto:office@geschenkmeister.at">office@geschenkmeister.at</a> · <a href="#impressum">Impressum</a> · <a href="#datenschutz">Datenschutz</a> · <a href="#" data-cookie-settings>Cookie-Einstellungen</a></div></footer>
-<script src="finder.js" defer></script><script src="consent.js" defer></script>
-</body></html>
+<footer class="gm-footer">
+  <div class="gm-container gm-footer__grid">
+    <div><a class="gm-brand" style="color:white" href="https://www.geschenkmeister.at/">Geschenk<span>meister</span></a><p>Geschenkideen mit ehrlicher Orientierung.</p></div>
+    <div><h3>Geschenkideen</h3><a href="#">Für Männer</a><br><a href="#">Für Frauen</a></div>
+    <div><h3>Service</h3><a href="#">Über uns</a><br><a href="#">Kontakt</a></div>
+    <div><h3>Rechtliches</h3><a href="#">Impressum</a><br><a href="#">Datenschutz</a></div>
+  </div>
+  <div class="gm-container gm-note" style="margin-top:2rem;color:#aebbd9">© <span data-current-year></span> Geschenkmeister</div>
+</footer>
+<script src="assets/js/geschenkmeister.js"></script>
+</body>
+</html>
