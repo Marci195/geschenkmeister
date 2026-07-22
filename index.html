@@ -1,103 +1,29 @@
-<!doctype html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Geschenkmeister Design System V1.0</title>
-<meta name="description" content="Komponentenübersicht für Geschenkmeister.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/geschenkmeister.css">
-</head>
-<body>
-<header class="gm-header">
-  <nav class="gm-nav gm-container" aria-label="Hauptnavigation">
-    <a class="gm-brand" href="https://www.geschenkmeister.at/">Geschenk<span>meister</span></a>
-    <button class="gm-nav-toggle" data-gm-nav-toggle aria-expanded="false" aria-label="Menü öffnen">☰</button>
-    <ul class="gm-menu" data-gm-menu>
-      <li><a href="https://www.geschenkmeister.at/">Startseite</a></li>
-      <li><a href="https://www.geschenkmeister.at/geschenke-maenner.html">Für Männer</a></li>
-      <li><a href="#">Für Frauen</a></li>
-      <li><a href="#">Anlässe</a></li>
-      <li><a href="#">Budget</a></li>
-      <li><a href="#">Ratgeber</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-<section class="gm-hero">
-  <div class="gm-container gm-hero__grid">
-    <div>
-      <span class="gm-badge">🏆 Geschenkmeister Design System 1.0</span>
-      <h1>Ein Look. Eine Sprache. Eine starke Marke.</h1>
-      <p class="gm-lead">Diese Bibliothek liefert die wiederverwendbaren Bausteine für alle Kategorien, Ratgeber und Produktseiten auf www.geschenkmeister.at.</p>
-      <div class="gm-actions">
-        <a class="gm-btn gm-btn--primary" href="#komponenten">Komponenten ansehen</a>
-        <a class="gm-btn gm-btn--ghost" href="templates/kategorie.html">Kategorie-Vorlage</a>
-      </div>
-    </div>
-    <aside class="gm-score">
-      <div class="gm-kicker" style="color:#dfe7ff">Geschenkmeister Score</div>
-      <div class="gm-score__value">9,6</div>
-      <div class="gm-score__row"><span>Geschenkidee</span><strong>10/10</strong></div>
-      <div class="gm-score__row"><span>Qualität</span><strong>9/10</strong></div>
-      <div class="gm-score__row"><span>Preis-Leistung</span><strong>9/10</strong></div>
-      <div class="gm-score__row"><span>Beliebtheit</span><strong>10/10</strong></div>
-    </aside>
-  </div>
-</section>
-
-<section class="gm-section gm-container" id="komponenten">
-  <span class="gm-kicker">Farben</span><h2>Markenpalette</h2>
-  <div class="gm-grid gm-grid--4">
-    <div class="gm-demo-swatch" style="background:#1e3a8a;color:white">Primärblau</div>
-    <div class="gm-demo-swatch" style="background:#f4b400">Gold</div>
-    <div class="gm-demo-swatch" style="background:#f7f9fc">Hintergrund</div>
-    <div class="gm-demo-swatch" style="background:#172033;color:white">Text</div>
-  </div>
-</section>
-
-<section class="gm-section gm-container">
-  <span class="gm-kicker">Karten</span><h2>Kategorien und Empfehlungen</h2>
-  <div class="gm-grid">
-    <article class="gm-card gm-card--lift"><div class="gm-card__icon">📱</div><h3>Technik</h3><p>Geschenke für Technikfans und digitale Alltagshelden.</p><a href="#" class="gm-btn gm-btn--ghost">Entdecken</a></article>
-    <article class="gm-card gm-card--lift"><div class="gm-card__icon">📚</div><h3>Bücher</h3><p>Inspirierende Titel, Bestseller und persönliche Empfehlungen.</p><a href="#" class="gm-btn gm-btn--ghost">Entdecken</a></article>
-    <article class="gm-card gm-card--lift"><div class="gm-card__icon">🏡</div><h3>Wohnen</h3><p>Schöne Ideen für Einzug, Zuhause und besondere Anlässe.</p><a href="#" class="gm-btn gm-btn--ghost">Entdecken</a></article>
-  </div>
-</section>
-
-<section class="gm-section gm-container">
-  <span class="gm-kicker">Produktkarte</span><h2>Einheitliche Produktempfehlung</h2>
-  <article class="gm-card gm-product">
-    <div class="gm-product__media">Produktbild</div>
-    <div>
-      <span class="gm-badge gm-badge--green">💰 Preis-Leistungs-Tipp</span>
-      <h3>Produktname</h3>
-      <p>Kurze, ehrliche Begründung, weshalb dieses Produkt als Geschenk geeignet ist und für wen es besonders gut passt.</p>
-      <div class="gm-actions"><a href="#" class="gm-btn gm-btn--gold" rel="sponsored nofollow">Zum Angebot</a><a href="#" class="gm-btn gm-btn--ghost">Details ansehen</a></div>
-      <p class="gm-note">Affiliate-Link: Für dich entstehen keine Mehrkosten.</p>
-    </div>
-  </article>
-</section>
-
-<section class="gm-section gm-container gm-faq">
-  <span class="gm-kicker">FAQ</span><h2>Fragen und Antworten</h2>
-  <details><summary>Wie wird der Geschenkmeister Score berechnet?</summary><p>Aus transparenten Einzelwerten wie Geschenkidee, Qualität, Preis-Leistung und Beliebtheit. Bewertungen müssen nachvollziehbar begründet werden.</p></details>
-  <details><summary>Welche Buttons werden verwendet?</summary><p>Für Affiliate-Ziele wird einheitlich „Zum Angebot“ genutzt. Interne Links verwenden „Details ansehen“ oder „Entdecken“.</p></details>
-</section>
-</main>
-
-<footer class="gm-footer">
-  <div class="gm-container gm-footer__grid">
-    <div><a class="gm-brand" style="color:white" href="https://www.geschenkmeister.at/">Geschenk<span>meister</span></a><p>Geschenkideen mit ehrlicher Orientierung.</p></div>
-    <div><h3>Geschenkideen</h3><a href="#">Für Männer</a><br><a href="#">Für Frauen</a></div>
-    <div><h3>Service</h3><a href="#">Über uns</a><br><a href="#">Kontakt</a></div>
-    <div><h3>Rechtliches</h3><a href="#">Impressum</a><br><a href="#">Datenschutz</a></div>
-  </div>
-  <div class="gm-container gm-note" style="margin-top:2rem;color:#aebbd9">© <span data-current-year></span> Geschenkmeister</div>
-</footer>
-<script src="assets/js/geschenkmeister.js"></script>
-</body>
-</html>
+<!doctype html><html lang="de-AT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geschenkmeister – gute Geschenkideen, ohne ewig zu suchen</title><meta name="description" content="Unabhängige Geschenkideen und Ratgeber für Männer, Frauen, Erwachsene, Technikfans und verschiedene Budgets."><link rel="canonical" href="https://www.geschenkmeister.at/">
+<meta property="og:locale" content="de_AT"><meta property="og:type" content="website"><meta property="og:title" content="Geschenkmeister – gute Geschenkideen, ohne ewig zu suchen"><meta property="og:description" content="Unabhängige Geschenkideen und Ratgeber für Männer, Frauen, Erwachsene, Technikfans und verschiedene Budgets."><meta property="og:url" content="https://www.geschenkmeister.at/"><meta property="og:site_name" content="Geschenkmeister">
+<link rel="stylesheet" href="style.css"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.geschenkmeister.at/#organization", "name": "Geschenkmeister", "url": "https://www.geschenkmeister.at/", "email": "office@geschenkmeister.at", "founder": {"@type": "Person", "name": "Marcel Schink"}}, {"@type": "WebSite", "@id": "https://www.geschenkmeister.at/#website", "url": "https://www.geschenkmeister.at/", "name": "Geschenkmeister", "inLanguage": "de-AT", "publisher": {"@id": "https://www.geschenkmeister.at/#organization"}}]}</script></head><body><header class="site-header"><div class="wrap topbar">
+<a class="brand" href="index.html">Geschenk<span>meister</span></a>
+<button class="menu-button" data-menu-button aria-expanded="false" aria-label="Menü öffnen">☰ Menü</button>
+<nav class="nav" data-nav aria-label="Hauptnavigation"><a href="index.html" aria-current="page">Startseite</a><a href="geburtstagsgeschenke.html">Geburtstag</a><a href="geschenke-maenner.html">Für Männer</a><a href="geschenke-frauen.html">Für Frauen</a><a href="geschenkideen-budget.html">Budget</a><a href="technik-geschenke.html">Technik</a><a href="buecher-als-geschenk.html">Bücher</a></nav></div></header>
+<main><section class="hero"><div class="wrap hero-grid"><div><span class="kicker">🎁 Ehrlich ausgewählt</span><h1>Gute Geschenkideen, ohne ewig zu suchen.</h1>
+<p class="lead">Geschenkmeister hilft dir, passende Geschenke nach Person, Anlass, Interesse und Budget zu finden – verständlich, unabhängig und ohne endlose Produktlisten.</p>
+<div class="search-box"><input data-site-search type="search" placeholder="Wonach suchst du? z. B. Technik, Buch, Geburtstag" aria-label="Geschenkideen durchsuchen"><a class="btn primary" href="#ideen">Suchen</a></div>
+<div class="actions"><a class="btn primary" href="#ideen">Geschenkideen entdecken</a><a class="btn" href="geburtstagsgeschenke.html">Nach Anlass suchen</a></div></div><div class="hero-art"><div class="gift">🎁</div></div></div></section>
+<div class="wrap"><aside class="notice"><strong>Transparenz:</strong> Manche Links sind Affiliate-Links. Bei einem Kauf kann Geschenkmeister eine Provision erhalten. Für dich bleibt der Preis gleich.</aside></div>
+<section class="section" id="ideen"><div class="wrap"><div class="section-head"><span class="kicker">Schnell zum passenden Geschenk</span><h2>Wähle deinen Einstieg</h2><p>Starte mit der Person, dem Anlass oder einem Interessengebiet.</p></div>
+<div class="grid">
+<article class="card lift" data-search-item><div class="icon">👨</div><h3>Geschenke für Männer</h3><p>Technik, Heimwerken, Genuss, Bücher und besondere Ideen.</p><a class="btn" href="geschenke-maenner.html">Entdecken</a></article>
+<article class="card lift" data-search-item><div class="icon">👩</div><h3>Geschenke für Frauen</h3><p>Moderne, persönliche und praktische Empfehlungen ohne Klischees.</p><a class="btn" href="geschenke-frauen.html">Entdecken</a></article>
+<article class="card lift" data-search-item><div class="icon">🎂</div><h3>Geburtstagsgeschenke</h3><p>Ideen nach Person, Budget und Interessen.</p><a class="btn" href="geburtstagsgeschenke.html">Entdecken</a></article>
+<article class="card lift" data-search-item><div class="icon">📱</div><h3>Technik-Geschenke</h3><p>Smartphones, Zubehör und praktische Technik ehrlich eingeordnet.</p><a class="btn" href="technik-geschenke.html">Entdecken</a></article>
+<article class="card lift" data-search-item><div class="icon">📚</div><h3>Bücher als Geschenk</h3><p>Ratgeber, Unterhaltung und besondere Buchideen.</p><a class="btn" href="buecher-als-geschenk.html">Entdecken</a></article>
+<article class="card lift" data-search-item><div class="icon">💶</div><h3>Nach Budget</h3><p>Ideen unter 25 €, bis 50 €, bis 100 € und darüber.</p><a class="btn" href="geschenkideen-budget.html">Entdecken</a></article>
+</div></div></section>
+<section class="section tight"><div class="wrap hero-grid"><div><span class="kicker">Unsere Methode</span><h2>Weniger Auswahl. Bessere Orientierung.</h2><p class="lead">Wir erklären, für wen eine Idee passt, welche Schwächen sie haben kann und welche Alternative sinnvoll ist.</p><a class="btn" href="impressum.html#grundsaetze">So empfehlen wir</a></div>
+<div class="score"><div class="small" style="color:#dfe7ff">Beispiel: Geschenkmeister Score</div><div class="score-number">9,6</div><div class="score-row"><span>Geschenkidee</span><strong>10/10</strong></div><div class="score-row"><span>Qualität</span><strong>9/10</strong></div><div class="score-row"><span>Preis-Leistung</span><strong>9/10</strong></div><div class="score-row"><span>Beliebtheit</span><strong>10/10</strong></div></div></div></section></main>
+<footer class="footer"><div class="wrap footer-grid">
+<div><a class="brand" style="color:white" href="index.html">Geschenk<span>meister</span></a><p>Geschenkideen mit ehrlicher Orientierung – nach Person, Anlass, Interesse und Budget.</p></div>
+<div><h3>Geschenkideen</h3><a href="geschenke-maenner.html">Für Männer</a><br><a href="geschenke-frauen.html">Für Frauen</a><br><a href="geschenke-erwachsene.html">Für Erwachsene</a></div>
+<div><h3>Entdecken</h3><a href="geburtstagsgeschenke.html">Geburtstag</a><br><a href="technik-geschenke.html">Technik</a><br><a href="buecher-als-geschenk.html">Bücher</a></div>
+<div><h3>Rechtliches</h3><a href="kontakt.html">Kontakt</a><br><a href="impressum.html">Impressum</a><br><a href="datenschutz.html">Datenschutz</a><br><a href="#" data-cookie-settings>Cookie-Einstellungen</a></div>
+</div><div class="wrap small" style="margin-top:28px">© <span data-year></span> Geschenkmeister · Marcel Schink</div></footer><script src="script.js" defer></script><script src="consent.js" defer></script></body></html>

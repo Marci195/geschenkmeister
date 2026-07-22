@@ -1,13 +1,29 @@
-# Geschenkmeister – integriertes Update
+# Geschenkmeister V1.1 – GitHub Upload
 
-Dieses Paket ist vollständig mit https://www.geschenkmeister.at verknüpft.
+## Hochladen
+1. ZIP-Datei am Mac entpacken.
+2. Alle Dateien **aus dem entpackten Ordner** in das Hauptverzeichnis des GitHub-Repositories hochladen.
+3. Vorhandene Dateien ersetzen.
+4. Darauf achten, dass `index.html` und `style.css` direkt im Hauptverzeichnis liegen.
+5. Nach dem Upload GitHub Pages kurz abwarten und anschließend die Website neu laden.
 
-## Enthalten
-- aktualisierte Startseite
-- neue Premium-Seite `geschenke-maenner.html`
-- Verlinkung zu Geschenkfinder, Budget, Technik, Bücher, Heimwerken und Produkt-Ratgebern
-- aktualisierte Sitemap
-- bestehende Cookie- und Analytics-Logik
+## Wichtig
+- Nicht den äußeren Ordner selbst als Unterordner hochladen.
+- Die Datei `style.css` muss neben `index.html` liegen.
+- Bestehende Affiliate-Links wurden übernommen:
+  - Amazon Heimwerker
+  - Amazon iPhone 15
+  - Amazon Samsung Galaxy S26
+  - Thalia Die 1%-Methode
+- Google Analytics wird erst nach Zustimmung geladen.
+- Vor Veröffentlichung bitte rechtliche Texte durch eine fachkundige Stelle prüfen.
 
-## Upload zu GitHub
-Den gesamten Inhalt dieses Ordners in das Hauptverzeichnis des bestehenden GitHub-Repositories hochladen und vorhandene Dateien ersetzen.
+## Version 1.1
+- vollständige responsive Website
+- Startseite
+- Männer, Frauen, Erwachsene
+- Geburtstag, Budget, Technik, Bücher
+- vier Ratgeber-/Produktseiten
+- Kontakt, Impressum, Datenschutz, 404
+- Sitemap, robots.txt
+- zentrale CSS- und JavaScript-Dateien
