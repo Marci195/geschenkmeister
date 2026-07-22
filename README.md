@@ -1,29 +1,16 @@
-# Geschenkmeister V1.1 – GitHub Upload
+# Geschenkmeister V1.2
 
-## Hochladen
-1. ZIP-Datei am Mac entpacken.
-2. Alle Dateien **aus dem entpackten Ordner** in das Hauptverzeichnis des GitHub-Repositories hochladen.
-3. Vorhandene Dateien ersetzen.
-4. Darauf achten, dass `index.html` und `style.css` direkt im Hauptverzeichnis liegen.
-5. Nach dem Upload GitHub Pages kurz abwarten und anschließend die Website neu laden.
+Weiterentwicklung des bestehenden GitHub-Projekts.
 
-## Wichtig
-- Nicht den äußeren Ordner selbst als Unterordner hochladen.
-- Die Datei `style.css` muss neben `index.html` liegen.
-- Bestehende Affiliate-Links wurden übernommen:
-  - Amazon Heimwerker
-  - Amazon iPhone 15
-  - Amazon Samsung Galaxy S26
-  - Thalia Die 1%-Methode
-- Google Analytics wird erst nach Zustimmung geladen.
-- Vor Veröffentlichung bitte rechtliche Texte durch eine fachkundige Stelle prüfen.
+## Neu in V1.2
+- alle bestehenden Produktbilder erhalten und sichtbar eingebunden
+- neue Premium-Startseite
+- redaktionelle Produktkarten
+- funktionsfähiger Geschenkfinder
+- Geschenkmeister-Scores auf Produktseiten
+- stärkere Affiliate-CTA-Texte
+- verbesserte mobile Darstellung
+- alte doppelte HTML-Dateien aus dem Release entfernt
 
-## Version 1.1
-- vollständige responsive Website
-- Startseite
-- Männer, Frauen, Erwachsene
-- Geburtstag, Budget, Technik, Bücher
-- vier Ratgeber-/Produktseiten
-- Kontakt, Impressum, Datenschutz, 404
-- Sitemap, robots.txt
-- zentrale CSS- und JavaScript-Dateien
+## Upload
+Alle Dateien aus diesem Ordner direkt in das Hauptverzeichnis des GitHub-Repositories hochladen und vorhandene Dateien ersetzen. `CNAME` unbedingt mit hochladen.

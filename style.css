@@ -81,3 +81,49 @@ th,td{text-align:left;padding:13px;border-bottom:1px solid var(--line)}
  .hero{padding:52px 0}.section{padding:50px 0}
  .cookie-inner{align-items:stretch;flex-direction:column}.cookie-actions{flex-wrap:wrap}
 }
+
+
+/* Geschenkmeister V1.2 */
+:root{--shadow-strong:0 24px 70px rgba(19,37,84,.16)}
+body{background:linear-gradient(180deg,#f8faff 0,#f6f8fc 100%)}
+.site-header{box-shadow:0 4px 20px rgba(19,37,84,.04)}
+.brand{font-size:1.34rem}
+.hero{position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-300px;bottom:-360px;background:rgba(30,58,138,.06);pointer-events:none}
+.hero-art{display:grid;place-items:center;padding:24px;isolation:isolate}
+.hero-product-image{position:relative;z-index:2;width:100%;height:330px;object-fit:contain;filter:drop-shadow(0 28px 30px rgba(0,0,0,.28));transition:transform .35s ease}
+.hero-art:hover .hero-product-image{transform:scale(1.035) rotate(-1deg)}
+.home-hero-art{background:linear-gradient(145deg,#152a60,#244ab0)}
+.home-hero-art .gift{font-size:8.5rem}
+.trust-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;color:#475569;font-weight:750;font-size:.92rem}
+.trust-row span{display:flex;align-items:center;gap:7px}
+.featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.featured-card{overflow:hidden;padding:0;display:flex;flex-direction:column}
+.featured-media{height:230px;background:linear-gradient(145deg,#eef2f8,#dfe7f3);display:grid;place-items:center;padding:22px}
+.featured-media img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 16px 18px rgba(20,38,80,.18));transition:.3s}
+.featured-card:hover .featured-media img{transform:scale(1.055)}
+.featured-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.featured-body .btn{margin-top:auto;align-self:flex-start}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.badge{display:inline-flex;border-radius:999px;padding:5px 9px;background:#eef3ff;color:var(--blue);font-weight:850;font-size:.76rem}
+.badge.gold{background:#fff1bd;color:#6a4d00}
+.finder-panel{background:linear-gradient(145deg,#132554,#244fb9);color:#fff;border-radius:28px;padding:34px;box-shadow:var(--shadow-strong)}
+.finder-panel h2,.finder-panel p{color:#fff}
+.finder-form{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:24px}
+.finder-form label{font-weight:800;font-size:.86rem}
+.finder-form select{width:100%;margin-top:7px;padding:13px;border-radius:11px;border:1px solid rgba(255,255,255,.24);background:#fff;color:var(--ink);font:inherit}
+.finder-form .btn{grid-column:1/-1;justify-self:start}
+.finder-results{display:none;margin-top:24px}.finder-results.is-visible{display:block}
+.finder-result-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.finder-result{background:#fff;color:var(--ink);border-radius:15px;padding:19px}.finder-result p{color:#4b5870}.finder-result a{font-weight:850;color:var(--blue)}
+.product-hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 2px}
+.product-hero-meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-weight:750;font-size:.84rem}
+.article-wide{max-width:1000px}
+.product-score-layout{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start;margin:28px 0}
+.product-score-layout .score{position:sticky;top:100px}
+.check-list,.minus-list{list-style:none;padding:0;margin:0}.check-list li,.minus-list li{position:relative;padding-left:30px;margin:10px 0}.check-list li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:950}.minus-list li:before{content:"–";position:absolute;left:4px;color:#b45309;font-weight:950}
+.cta-box{margin-top:34px;background:linear-gradient(135deg,#fff7db,#fff);border:1px solid #f2d76e;border-radius:20px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+@media(max-width:900px){.featured-grid,.finder-result-list{grid-template-columns:1fr 1fr}.finder-form{grid-template-columns:1fr 1fr}.product-score-layout{grid-template-columns:1fr}.product-score-layout .score{position:static}.hero-product-image{height:285px}}
+@media(max-width:580px){.featured-grid,.finder-result-list,.finder-form{grid-template-columns:1fr}.finder-panel{padding:24px}.hero-product-image{height:240px}.cta-box{align-items:stretch;flex-direction:column}.trust-row{gap:10px}}
+
+.product-visual img{width:100%;height:170px;object-fit:contain;padding:10px;filter:drop-shadow(0 12px 14px rgba(20,38,80,.16))}
